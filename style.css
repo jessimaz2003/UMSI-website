@@ -1,0 +1,285 @@
+/* Jessica Imaz, Beck*/
+
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+.skip {
+    top: -40px;
+    position: absolute;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px;
+}
+
+.skip:focus {
+    top: 20px;
+}
+
+*:focus {
+    border: solid 2px #000000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+
+}
+    
+    nav a {
+        color: white;
+        padding: 5px;
+        display:block;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center; 
+        max-width: 100%;
+    }
+    
+    .header-container img {
+        max-width: 25%; 
+        margin: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        padding: 5px 5px;
+        outline-color: #FFD700;
+        outline-width: 7px;
+        outline-style: solid;
+    }
+    nav {
+        width: 100%; /* I asked chatGPT to verify my code for mistakes and it suggested this section structure for navigation section recentering */
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap; 
+        border-bottom: solid 2px #FFD700; 
+        padding: 0; 
+        margin: 0 auto; 
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    nav ul li {
+        flex: 1; 
+        min-width: 100px;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1px;
+        display: block;
+        text-align: center;
+        background-color: #00274C;
+        font-size: small; 
+        width: 100%;
+        
+    }
+    
+    nav a:hover, nav a:focus {
+        text-decoration: underline;
+        color: #FFCB05 ;
+    }
+
+    .resources-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        table-layout: fixed; 
+    }
+    
+    .resources-table td {
+        padding: 10px;
+        border: 10px solid #00274C;
+        vertical-align: top;
+        background-color: #FFCB05;
+        font-size: 17px;
+    }
+    
+    .resources-table a {
+        font-weight: bold;
+        font-size: larger;
+        color: #131516; 
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+        background-color: #FFCB05;
+    }
+    
+    .resources-table p {
+        margin: 5px 0;
+        color: #00274C;
+        background-color: #FFCB05;
+    }
+
+    main ul {
+        list-style-type: none !important; /*There was an override issue with the html5reset.css file so I added the !important just for this section*/
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main ul li a {
+        display: inline-block;
+        width: 180px; 
+        height: 150px; 
+        text-align: center;
+        text-decoration: none;
+        color: #00274C; 
+        background-color: #FFCB05; 
+        border-radius: 50%; 
+        transition: background-color 0.3s ease, transform 0.2s ease; /* I asked chat gpt to help me apply a smooth transition on hover */
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 15%;
+        line-height: 1.2;
+        box-sizing: border-box;
+        padding: 50px 0px 0px 0px;
+    }
+/*for the circles:*/
+    main ul li:nth-child(2n) a {
+        background-color: #00274C;
+        margin-left: 59%; 
+        padding: 35px 0px 0px 0px;
+        color: #FFD700;
+    }
+    
+    
+    main ul li:nth-child(2n) a:hover, main ul li:nth-child(2n) a:focus {
+        background-color: #FFD700; 
+        color: #00274C;
+    }
+    main ul li a:hover, main ul li a:focus {
+        background-color: #00274C; 
+        color: #FFD700; 
+    }
+
+    h3{
+        background-color: #ffffff;
+
+        text-align: left;
+    }
+    h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    figure {
+        margin: 0; 
+        padding: 0;
+    } 
+    figcaption {
+        text-align: left; 
+        margin: 0;
+        padding: 0; 
+        font-size: 10px; 
+        color: #0C2340; 
+    }
+
+    section {
+        position: relative;
+        margin: 0; 
+    }
+    
+    section h2 {
+        position: relative;
+        width: 100%; 
+        padding: 10px; 
+        text-align: center;
+        color: #FFD700; 
+    }
+    
+    section h2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0C2340; 
+        z-index: -1; 
+    }
+
+    ol {
+        list-style-type: none; 
+        padding: 0; /* To remove the default padding and the margin from the other html5reset.css */
+        margin: 0; 
+    }
+    
+    ol li {
+        background-color: #ffffff; 
+        margin-bottom: 1vw;
+        padding: 4%; 
+        border-radius: 1vw; 
+        text-align: center;
+        color: #000000;
+        font-weight: bold;
+        width: 40%;
+        margin-left: 30%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+    
+    ol li:nth-child(1) {
+        background-color: rgba(255, 203, 5, 0.3); 
+    }
+    
+    ol li:nth-child(2) {
+        background-color: rgba(255, 203, 5, 0.6);
+    }
+    
+    ol li:nth-child(3) {
+        background-color: rgba(255, 203, 5, 0.9);
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        margin-bottom: 20px; 
+    }
+    
+    .button-link {
+        display: inline-block; /* Allows for padding and background */
+        background-color: rgba(255, 203, 5, 0.7); /* Yellow with 80% opacity */
+        color: #000; 
+        text-decoration: none;
+        padding: 15px; 
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        text-align: center; 
+        font-weight: bold; 
+        transition: background-color 0.3s; /* ChatGPT helped me format the transition effect for hover */
+    }
+    
+    .button-link:hover {
+        background-color: rgba(255, 203, 5, 1); 
+    }
+    a {
+        color: inherit; 
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
